@@ -1,0 +1,17 @@
+1. Crie uma classe abstrata Notificacao com um método enviar(String mensagem). Depois, crie as classes concretas Email e SMS que implementam esse método de forma diferente. No main(), envie duas mensagens usando as duas formas de notificação.
+
+2. Crie uma classe abstrata Imposto com:
+
+Um método abstrato calcular(double valor).
+Um método concreto exibirImposto(double valor) que chama calcular e imprime o valor do imposto.
+Depois, crie a classe ImpostoRenda (15%) e ImpostoProduto (7%) que implementam calcular.
+
+3. Crie duas classes: Carro e Moto, cada uma com um método exibirInfo() que imprime o tipo do veículo e a quantidade de rodas. No main(), crie objetos das duas classes e chame seus métodos diretamente.
+
+4. crie uma classe abstrata chamada funcionario 
+implemente um funcionario CLT que tem desconto de INSS e o benefício como plano de saude
+implemente um funcionario PJ que não tem descontos nem benefícios.
+mostre o salàrio liquido de cada um deles.
+decida o que é melhor usar extends ou implements
+
+finalizar até 10:30

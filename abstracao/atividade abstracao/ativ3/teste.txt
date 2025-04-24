@@ -1,0 +1,27 @@
+// Classe Carro
+class Carro {
+    public void exibirInfo() {
+        System.out.println("Tipo: Carro");
+        System.out.println("Quantidade de rodas: 4");
+    }
+}
+
+// Classe Moto
+class Moto {
+    public void exibirInfo() {
+        System.out.println("Tipo: Moto");
+        System.out.println("Quantidade de rodas: 2");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Criação dos objetos
+        Carro carro = new Carro();
+        Moto moto = new Moto();
+
+        // Chamando os métodos
+        carro.exibirInfo();
+        moto.exibirInfo();
+    }
+}
