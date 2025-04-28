@@ -1,5 +1,10 @@
+import '../exercicios/atividade_1.dart';
+import 'Temperatura.dart';
+import 'login.dart';
 import 'ContaBancaria.dart';
 import 'Produto.dart';
+import 'semaforo.dart';
+import 'ALuno.dart';
 
 /**
  * encapsulamento e o conceito de ocultas os detalhes internos de uma classe e
@@ -47,4 +52,31 @@ void main(List<String> args) {
   p.preco = 2.5; //chamando setter
   //p.nome e p.preco sao getters
   print('produto: ${p.nome} Preço: ${p.preco}');
+
+  //login usuario
+  login user = login();
+  user.autenticar('123');//senha incorreta
+  user.autenticar('123456');//senha incorreta
+  user.autenticar('123abc');//senha correta
+  
+  //semaforo
+  var s = Semaforo();
+  s.mostrarStatus();
+  s.mudaCor();
+  s.mostrarStatus();
+
+  //aluno
+ALuno aluno = ALuno('molpa');
+aluno.nota = 8;
+print('situacao do alubo ${aluno.situacao}');
+
+//temperatura
+Temperatura t = Temperatura();
+t.celsius = 25;
+print('temperatura em celsius ${t.celsius}\n');
+print('temperatura em fahrenheit ${t.fahrenheit}');
+
+t.fahrenheit = 96.20;
+print('convertido para celsius ${t.celsius.toStringAsFixed(2)}');
+
 }

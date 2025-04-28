@@ -12,7 +12,7 @@ super        |  palavra-chave usada para acessar membros da superclasse
 
 import 'Cachorro.dart';
 import 'Gato.dart';
-import 'Aluno.dart';
+import 'Alun0o.dart';
 void main(List<String> args) {
   Cachorro dog = new Cachorro();
   dog.dormir();
