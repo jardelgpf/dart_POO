@@ -1,4 +1,13 @@
-class Produto {
+
+
+
+
+
+
+
+
+
+  class Produto {
   String nome;
   double _preco = 0; 
 
