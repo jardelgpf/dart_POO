@@ -21,3 +21,11 @@ class RelatorioBaguncado{
   }
 }
 //essa classe faz muita coisa ou seja, baixa coesao
+
+//exemplo com alta coesao
+//a classe tem apenas uma responsabilidade gerando alta coesao e desacoplamento
+class gerarRelatorio{
+  void gerar(){
+    print('gerando relatorio...');
+  }
+}
