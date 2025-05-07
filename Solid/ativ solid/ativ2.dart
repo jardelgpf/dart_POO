@@ -14,23 +14,20 @@ abstract class Cargo {
 
 class Gerente implements Cargo {
   @override
-  double calcularSalario() {
-    return 5000;
-  }
+  double calcularSalario() => 5000;
 }
 
 class Desenvolvedor implements Cargo {
   @override
-  double calcularSalario() {
-    return 4000;
-  }
+  double calcularSalario() => 4000;
 }
 
 class CalculaSalario {
-  double calcular(Cargo cargo) {
-    return cargo.calcularSalario();
-  }
+  double calcular(Cargo cargo) => cargo.calcularSalario();
 }
+
+// => é igual um return, mas mais curto e mais legível.
+// => é um operador de expressão única, usado para simplificar funções que retornam um valor único.
 
 void main() {
   CalculaSalario calculadora = CalculaSalario();

@@ -33,6 +33,7 @@ class RelatorioService {
   RelatorioService(this.bd);
 
   void gerarRelatorio(String conteudo) {
+    print('exibindo relatório: $conteudo');
     bd.salvar(conteudo);
   }
 }

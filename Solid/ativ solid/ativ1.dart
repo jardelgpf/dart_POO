@@ -10,6 +10,7 @@ class UsuarioManager {
   }
 } */
 
+//MEU METODO
 class UsuarioSalva {
   void salvarUsuario(String nome) {
     print('Usuário $nome salvo no banco de dados.');
