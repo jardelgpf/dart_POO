@@ -5,6 +5,7 @@
  * alta coesao facilita manutencao, testes e reutilizacao
  * exemplo
  * uma classe RelatorioPDF deve gerar PDF e nao cuidar da autenticacao do usuario
+ * exemplo de coesao baixa (ma pratica)
  */
 
 class RelatorioBaguncado{
@@ -24,8 +25,27 @@ class RelatorioBaguncado{
 
 //exemplo com alta coesao
 //a classe tem apenas uma responsabilidade gerando alta coesao e desacoplamento
-class gerarRelatorio{
+class gerarRelatorio{  
   void gerar(){
     print('gerando relatorio...');
   }
+}
+
+class Email{
+
+  void enviarEmail(){
+    print('enviando email...');
+  }
+}
+
+class Auth{
+
+  bool login(String user, String password){
+    if(user == 'abc' && password == '123'){
+      return true;
+    }
+
+    return false;
+  }
+
 }
